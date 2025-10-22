@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Task Collab</title>
+<!-- Fonts: Shrikhand (logo), Roboto Flex (headings), Roboto Serif (body) -->
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Roboto+Flex:wght@400;700&family=Roboto+Serif:opsz@8..80&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+<header>
+<h1 class="logo">Task Collab</h1>
+<div class="small">Keep your dorm or apartment running smoothly 🏠</div>
+</header>
+
+
+<main class="card">
+<h3>Enter Roommates' Names</h3>
+<div class="row">
+<input id="roommateInput" placeholder="Add roommate name">
+<button class="primary" id="addRoommateBtn">Add</button>
+</div>
+<div id="roommateList" class="list"></div>
+</main>
+
+
+<main class="card">
+<h3>Add Task</h3>
+<input id="newTaskText" placeholder="Task name (e.g., Clean Kitchen)">
+<div class="row">
+<select id="newTaskAssignee"></select>
+<select id="newTaskColumn">
+<option value="todo">To Do</option>
+<option value="doing">Doing</option>
+<option value="done">Done</option>
+</select>
+</div>
+<button class="primary" id="addTaskBtn">Add Task</button>
+
+
+<div class="columns">
+<div class="column"><h4>To Do</h4><div id="todoCol"></div></div>
+<div class="column"><h4>Doing</h4><div id="doingCol"></div></div>
+<div class="column"><h4>Done</h4><div id="doneCol"></div></div>
+</div>
+</main>
+
+
+<aside class="card">
+<h3>Shared Budget</h3>
+<input id="expenseName" placeholder="Expense name (e.g., Pizza Night)">
+<input id="expenseAmt" placeholder="$ amount" type="number">
+<button class="primary" id="addExpenseBtn">Add Expense</button>
+<div id="expenseList" class="list"></div>
+</aside>
+
+
+<aside class="card">
+<h3>Location & Reminders</h3>
+<select id="trashDaySelect">
+<option value="0">Sunday</option>
+<option value="1">Monday</option>
+</html>
